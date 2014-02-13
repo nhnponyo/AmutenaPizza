@@ -1,0 +1,8 @@
+#pragma once
+
+enum MapNumber
+{
+	PIZZA_BAKERY_0,
+	VEGETABLE_BEVERAGE_STORE_1,
+	NUMBER_OF_VILLAGE_MAP
+};

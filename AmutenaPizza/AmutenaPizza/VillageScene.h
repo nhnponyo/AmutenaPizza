@@ -1,5 +1,6 @@
 #pragma once
 #include "NNScene.h"
+#include "GameConfig.h"
 
 class CCharacterInMap;
 class NNSprite;
@@ -19,7 +20,11 @@ public:
 private:
 	void Init();
 
-	NNSprite*			m_pBackground0;
 	CCharacterInMap*	Character;
+	NNSprite*			m_pBackground0;
+	NNSprite*			m_pBackground1;
+	NNSprite*			m_pBackground[NUMBER_OF_VILLAGE_MAP];
+
+	void ChangeMapBackground();
 };
 

@@ -1,5 +1,6 @@
 #pragma once
 #include "NNObject.h"
+#include "GameConfig.h"
 
 class NNAnimation;
 
@@ -15,11 +16,20 @@ public:
 
 	NNCREATE_FUNC(CCharacterInMap);
 
+public:
+	MapNumber GetNumberOfCurrentMap() { return numberOfCurrentMap;}
+
 private:
 	void Init();
 
 	NNAnimation* Character;
 
+	MapNumber numberOfCurrentMap;
+
 	void OperateCharacter();
+	void SetCharacterOnLeft();
+	void SetCharacterOnRight();
+	void ChangeNumberOfCurrentMap();
+
 };
 

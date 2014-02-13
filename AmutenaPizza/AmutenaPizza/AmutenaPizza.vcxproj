@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CharacterInMap.h" />
+    <ClInclude Include="GameConfig.h" />
     <ClInclude Include="MainTitleScene.h" />
     <ClInclude Include="PrintConsole.h" />
     <ClInclude Include="UIButton.h" />

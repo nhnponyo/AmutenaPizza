@@ -45,5 +45,8 @@
     <ClInclude Include="CharacterInMap.h">
       <Filter>Character</Filter>
     </ClInclude>
+    <ClInclude Include="GameConfig.h">
+      <Filter>Util</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
