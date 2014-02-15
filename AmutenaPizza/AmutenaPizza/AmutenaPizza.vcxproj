@@ -74,7 +74,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BOHScene.cpp" />
     <ClCompile Include="CharacterInMap.cpp" />
+    <ClCompile Include="FOHScene.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MainTitleScene.cpp" />
     <ClCompile Include="PrintConsole.cpp" />
@@ -82,7 +84,9 @@
     <ClCompile Include="VillageScene.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BOHScene.h" />
     <ClInclude Include="CharacterInMap.h" />
+    <ClInclude Include="FOHScene.h" />
     <ClInclude Include="GameConfig.h" />
     <ClInclude Include="MainTitleScene.h" />
     <ClInclude Include="PrintConsole.h" />

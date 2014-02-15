@@ -1,6 +1,7 @@
 #include "CharacterInMap.h"
 #include "NNAnimation.h"
 #include "NNInputSystem.h"
+#include "NNScene.h"
 
 CCharacterInMap::CCharacterInMap(void)
 {
@@ -32,7 +33,7 @@ void CCharacterInMap::Init()
 	SetCharacterOnLeft();
 	AddChild(Character);
 
-	numberOfCurrentMap = PIZZA_BAKERY_0;
+	numberOfCurrentMap = PIZZA_BAKERY_MAP_0;
 }
 
 void CCharacterInMap::OperateCharacter()
@@ -73,5 +74,10 @@ void CCharacterInMap::ChangeNumberOfCurrentMap()
 		SetCharacterOnRight();
 		return;
 	}
+}
+
+void CCharacterInMap::EnterBuilding(int leftOfRange, int RightOfRange, BuildingNumber building)
+{
+
 }
 

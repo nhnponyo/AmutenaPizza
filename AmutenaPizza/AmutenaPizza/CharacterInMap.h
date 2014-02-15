@@ -3,6 +3,7 @@
 #include "GameConfig.h"
 
 class NNAnimation;
+class NNScene;
 
 class CCharacterInMap :
 	public NNObject
@@ -22,14 +23,17 @@ public:
 private:
 	void Init();
 
-	NNAnimation* Character;
+	NNAnimation*	Character;
 
-	MapNumber numberOfCurrentMap;
+	MapNumber		numberOfCurrentMap;
+
+	NNScene*		buildingScene[NUMBER_OF_BIULDING];
 
 	void OperateCharacter();
 	void SetCharacterOnLeft();
 	void SetCharacterOnRight();
 	void ChangeNumberOfCurrentMap();
+	void EnterBuilding(int leftOfRange, int RightOfRange, BuildingNumber building);
 
 };
 

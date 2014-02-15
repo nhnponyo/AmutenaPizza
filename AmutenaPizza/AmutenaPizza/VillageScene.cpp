@@ -29,15 +29,19 @@ void CVillageScene::Init()
 
 	m_pBackground0 = NNSprite::Create(L"Sprite/map1.png");
 	m_pBackground1 = NNSprite::Create(L"Sprite/map2.png");
-	
+	m_pBackground2 = NNSprite::Create(L"Sprite/map3.png");
+
 	m_pBackground[0] = m_pBackground0;
 	m_pBackground[1] = m_pBackground1;
+	m_pBackground[2] = m_pBackground2;
 
 	m_pBackground0 -> SetVisible(true);
 	m_pBackground1 -> SetVisible(false);
+	m_pBackground2 -> SetVisible(false);
 
 	AddChild(m_pBackground0);
 	AddChild(m_pBackground1);
+	AddChild(m_pBackground2);
 
 	Character = CCharacterInMap::Create();
 	AddChild(Character);

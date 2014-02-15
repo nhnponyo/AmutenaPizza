@@ -17,6 +17,12 @@
     <ClCompile Include="CharacterInMap.cpp">
       <Filter>Character</Filter>
     </ClCompile>
+    <ClCompile Include="BOHScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="FOHScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Scene">
@@ -47,6 +53,12 @@
     </ClInclude>
     <ClInclude Include="GameConfig.h">
       <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="FOHScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="BOHScene.h">
+      <Filter>Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
