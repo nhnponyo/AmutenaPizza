@@ -2,6 +2,8 @@
 #include "NNAnimation.h"
 #include "NNInputSystem.h"
 #include "NNScene.h"
+#include "NNSceneDirector.h"
+#include "FOHScene.h"
 
 CCharacterInMap::CCharacterInMap(void)
 {
@@ -24,6 +26,7 @@ void CCharacterInMap::Update( float dTime )
 
 	OperateCharacter();
 	ChangeNumberOfCurrentMap();
+	//EnterBuilding();
 }
 
 void CCharacterInMap::Init()
@@ -76,8 +79,13 @@ void CCharacterInMap::ChangeNumberOfCurrentMap()
 	}
 }
 
-void CCharacterInMap::EnterBuilding(int leftOfRange, int RightOfRange, BuildingNumber building)
+void CCharacterInMap::EnterBuilding()
 {
+	NNPoint nowPosition = Character->GetPosition();
 
+	if(numberOfCurrentMap == PIZZA_BAKERY_MAP_0)
+		if(nowPosition.GetX() >= 64 && nowPosition.GetX() <= 395)
+			if(NNInputSystem::GetInstance()->GetKeyState(VK_SPACE) == KEY_DOWN)
+				NNSceneDirector::GetInstance()->ChangeScene(CFOHScene::Create());
 }
 

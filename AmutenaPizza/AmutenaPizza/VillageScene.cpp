@@ -21,6 +21,7 @@ void CVillageScene::Update( float dTime )
 {
 	NNScene::Update(dTime);
 	ChangeMapBackground();
+	Character->EnterBuilding(); // 캐릭터 클래스에서 씬을 변경할 수 없어서 여기서 업데이트 한다
 }
 
 void CVillageScene::Init()
